@@ -10,10 +10,11 @@ public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(TutorialMod.MOD_ID);
 
     public static final DeferredItem<Item> CHEESE = ITEMS.register("cheese",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoods.CHEESE).stacksTo(64)));
 
     public static final DeferredItem<Item> RAW_CHEESE = ITEMS.register("raw_cheese",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoods.RAW_CHEESE).stacksTo(64)));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
