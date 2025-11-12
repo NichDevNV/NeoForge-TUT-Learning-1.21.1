@@ -14,6 +14,6 @@ public class ModFoods {
     public static final FoodProperties RAW_CHEESE = new FoodProperties.Builder()
             .nutrition(2)
             .saturationModifier(0.1f)
-            .effect(() -> new MobEffectInstance(MobEffects.POISON, 10, 2), 0.8f)
+            .effect(() -> new MobEffectInstance(MobEffects.POISON, 200, 2), 0.8f)
             .build();
 }
